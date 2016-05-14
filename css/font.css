@@ -1,0 +1,23 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: local("OpenSans-Bold"),
+    url(../font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: local("OpenSans-Light"),
+    url(../font/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: local("OpenSans-Regular"),
+    url(../font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: cour;
+  src: local("cour"),
+    url(../font/cour.ttf);
+}
