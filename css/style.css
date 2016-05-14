@@ -104,7 +104,6 @@ header {
 	white-space: nowrap;
 }
 
-
 .search input {
 	width: 0;
 	height: 28px;
@@ -143,14 +142,103 @@ header {
 }
 
 .login {
+	position: relative;
 	margin-right: 20px;
 	float: right;
 }
 
 .login a {
+	opacity: .75;
 	color: #0D47A1;
 	font-family: OpenSans-Bold;
 	text-decoration: none;
+	transition: all .55s ease;
+}
+
+.login a:hover {
+	opacity: 1;
+	transition: all .55s ease;
+}
+
+/* login form */
+
+.loginform {
+    position: absolute;
+    margin-left: -80px;
+	display: none;
+    width: 200px;
+    height: 174px;
+    padding: 15px 25px 0 25px;
+    margin-top: 5px;
+    cursor: default;
+    background-color:rgba(144, 202, 249, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.loginform.active {
+	display: block;
+}
+
+.loginform.animated {
+	animation-duration: .5s;
+}
+
+.loginform input[type=text],
+.loginform input[type=password],
+.loginform input[type=submit] {
+	margin-top: 20px;
+	width: 160px;
+	height: 28px;
+	padding: 0 20px;
+	border: none;    
+	float: left;
+	font-size: 16px;
+	color: #848e92;
+	cursor: pointer;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: #fbfbfb;
+	transition: all .55s ease;
+}
+
+.loginform input[type=text]:focus,
+.loginform input[type=password]:focus,
+.loginform input[type=text]:hover,
+.loginform input[type=password]:hover {
+	outline: none;
+	cursor: text;
+	color: #222;
+	transition: all .55s ease;
+}
+
+.loginform input[type=submit] {
+	margin-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: #888;
+	transition: all .55s ease;
+}
+
+.loginform input[type=submit]:hover,
+.loginform input[type=submit]:focus {
+	outline: none;
+}
+
+.loginform input[type=submit]:hover {
+    background: #aaa;
+	transition: all .55s ease;
+}
+ 
+.loginform input[type=submit]:active {
+	position: relative;
+	top: 1px;
+	outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 #open-right {
@@ -168,25 +256,41 @@ header h1 {
 /* menu */
 
 .snap-drawer {
-	background: #666;
+	background: #323949;
 }
 
 menu {
-	padding: 20px;
+	width: 100%;
 	color: #fff;
 }
 
 menu h2 {
-	padding-bottom: 10px;
-}
+	font-size: 32px;
+	padding: 40px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
 
 menu li {
+	padding: 20px;
 	margin-bottom: 5px;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 menu a {
+	font-size: 18px;
 	margin: 20px;
+	color: #e5e5e5;
+	transition: all .55s ease;
+}
+
+menu a:hover {
 	color: #fff;
+	transition: all .55s ease;
+}
+
+menu li.active a {
+	color: #e5e5e5;
+	cursor: default;
+	font-weight: 800;
 }
 
 /* section */
