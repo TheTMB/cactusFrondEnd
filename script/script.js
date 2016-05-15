@@ -56,3 +56,37 @@ $('.form-radio').click(function() {
 		$('.block-form-1').removeClass('active');		
 	}
 });
+
+// cabinet
+
+var iCur    = 2;
+var str     = '';
+
+for (var i = iCur-1; i >= 0; --i) {
+    str = "<tr><td>"+i+"</td>";
+    for (var j = 0; j < 4; ++j) str += '<td>' + 'test' + '</td>';
+    $('#events').after(function() {   
+        return str + '</tr>'; 
+    });
+};
+
+str = "<tr><th>#</th><th>Name</th><th>Autors</th><th>Start</th><th>End</th></tr>";
+$('#events').after(function() {   
+    return str; 
+});
+
+var iCur    = 10;
+var str     = '';
+
+for (var i = iCur-1; i >= 0; --i) {
+    str = "<tr><td>"+i+"</td>";
+    for (var j = 0; j < 4; ++j) str += '<td>' + 'test' + '</td>';
+    $('#eventsEnd').after(function() {   
+        return str + '</tr>'; 
+    });
+};
+
+str = "<tr><th>#</th><th>Name</th><th>Autors</th><th>Start</th><th>End</th></tr>";
+$('#eventsEnd').after(function() {   
+    return str; 
+});

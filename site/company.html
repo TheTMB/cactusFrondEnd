@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/snap.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="shortcut icon" href="../image/shortcut.png">
+    <title>Studevs | Profile</title>
+</head>
+<body>
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-right">
+            <menu>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Companies</a></li>
+                </ul>
+            </menu>
+        </div>
+    </div>
+    <div data-role="page" class="container-snap" id="content" style="">
+        <div class="top-bar" data-position="fixed">
+            <div class="container">
+                <div class="logo"></div>
+                <div id="open-right"><a href="#">&#9776;</a></div>
+                <div class="login">
+                    <a href="#">Login</a>
+                    <div class="loginform">
+                        <form action="#">
+                            <input type="text" name="username" placeholder="username">
+                            <input type="password" name="password" placeholder="password">
+                            <input type="submit" value="log in">
+                        </form>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="#">
+                        <span class="icon-search"></span>
+                        <input type="text" name="text" id="search" placeholder="Find...">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="snap-content block-profile">
+            <div class="container container-profile"> 
+                <section class="block block-profile-left">
+                    <div class="company_photo"></div>
+                    <h2 class="company_profile">dsfsdf</h2>
+                    <h3 class="company_email">@mail</h3>
+                    <h4 class="company_country">ukr</h4>
+                    <h4 class="company_city">kiev</h4>
+                    <h4 class="company_phone">4324</h4>
+                    <h4 class="company_site">http</h4>
+                    <h4 class="company_more">sdf</h4>
+                </section>
+                <section class="block block-profile-right">
+                    <a href="addEvent.html" class="addEvent">Add Event</a>
+                    <div class="events">    
+                        <h2>Next events:</h2>
+                        <table id="events"></table>
+                    </div> 
+                    <div class="eventsEnd">    
+                        <h2>Last events:</h2>
+                        <table id="eventsEnd"></table>
+                    </div> 
+                </section>
+            </div>
+            <footer>
+                <div class="container">
+                    <p>Copyright © 2016 Studev</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="../script/snap.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+</html>

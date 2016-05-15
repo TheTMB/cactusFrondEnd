@@ -492,6 +492,110 @@ section {
 }
 
 
+/* cabinet */
+
+.container-profile {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.block-profile-left {
+	width: 300px;
+	padding: 20px;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.company_photo {
+	margin: 0 auto 40px;
+	width: 260px;
+	height: 260px;
+	background: url(../image/icon-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.block-profile-left h2,
+.block-profile-left h3,
+.block-profile-left h4 {
+	margin-top: 6px;
+	padding: 0 20px;
+}
+
+.block-profile-right {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 900px;
+	padding: 0 20px;
+}
+
+.addEvent {
+	position: relative;
+	margin: 20px;
+	color: #0D47A1;
+	padding: 10px 20px;
+	opacity: .75;
+	background: #BBDEFB;
+	border-radius: 2px;
+	transition: all .55s ease;
+}
+
+.addEvent:hover {
+	opacity: 1;
+	transition: all .55s ease;
+}
+
+.events,
+.eventsEnd {
+	margin-top: 20px;
+}
+
+table {
+	margin-top: 10px;
+	width: 800px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+	width: 180px;
+    text-align: center;
+    padding: 8px;
+}
+
+th:nth-child(1), td:nth-child(1) {
+	width: 80px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 
