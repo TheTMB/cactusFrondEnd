@@ -46,8 +46,13 @@ $('#addLanguage').click(function() {
 	 });
 })
 
-$('.form-radio label').click(function() {
+$('.form-radio').click(function() {
 	var radio = $('input[name=ident]:checked').val();
-	if (radio === "id0")
-		
+	if (radio == "id0") {
+		$('.block-form-1').addClass('active');
+		$('.block-form-2').removeClass('active');
+	} else {
+		$('.block-form-2').addClass('active');
+		$('.block-form-1').removeClass('active');		
+	}
 });

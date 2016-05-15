@@ -384,31 +384,46 @@ section {
 	cursor: pointer;
 }
 
+.form-radio div input:hover,
+.form-radio div input:focus {
+	outline: none;	
+}
+
 .block-register .container {
 	background: #fff;
 }
 
-.block-form-1 form {
+.block-form-1,
+.block-form-2 {
+	display: none;
+}
+
+.block-form-1.active,
+.block-form-2.active {
+	display: block;
+}
+
+.block-form form {
 	margin: 0 auto;
 	width: 500px; 
 }
 
-.block-form-1 form div {
+.block-form form div {
 	margin-top: 20px;
 	width: 500px;
 	font: 18px OpenSans-Light;
 	line-height: 32px;
 }
 
-.block-form-1 form div div {
+.block-form form div div {
 	margin-top: 0;
 	max-width: 320px;
 	float: left;
 }
 
-.block-form-1 input,
-.block-form-1 select,
-.block-form-1 textarea {
+.block-form input,
+.block-form select,
+.block-form textarea {
 	width: 260px;
 	height: 28px;
 	float: right;
@@ -424,29 +439,29 @@ section {
 	transition: all .55s ease;
 }
 
-.block-form-1 select {
+.block-form select {
 	border-radius: 0;
 }
 
-.block-form-1 input:hover,
-.block-form-1 input:focus,
-.block-form-1 select:hover,
-.block-form-1 select:focus,
-.block-form-1 textarea:hover,
-.block-form-1 textarea:focus {
+.block-form input:hover,
+.block-form input:focus,
+.block-form select:hover,
+.block-form select:focus,
+.block-form textarea:hover,
+.block-form textarea:focus {
 	outline: none;
 	cursor: text;
 	color: #222;
 	transition: all .55s ease;
 }
 
-.block-form-1 input[type=submit]:hover,
-.block-form-1 select:hover,
+.block-form input[type=submit]:hover,
+.block-form select:hover,
 .block-form-1 #addLanguage:hover {
 	cursor: pointer;
 }
 
-.block-form-1 select {
+.block-form select {
 	display: block;
 	margin: 0 -14px 10px 16px;
 	width: 150px;
@@ -458,7 +473,7 @@ section {
 	width: 180px;
 }
 
-.block-form-1 textarea {
+.block-form textarea {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	height: 100px;
@@ -470,7 +485,7 @@ section {
 	resize: none;
 }
 
-.block-form-1 form div.button-form input {
+.block-form form div.button-form input {
 	float: none;
 	display: block;
     margin : 0 auto;
