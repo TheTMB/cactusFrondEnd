@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="script/jquery-2.2.3.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/snap.css">
-    <link rel="stylesheet" type="text/css" href="css/animation.css">
-    <link rel="shortcut icon" href="image/shortcut.png">
+    <script src="../script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/snap.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="shortcut icon" href="../image/shortcut.png">
     <title>Studevs</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <menu>
                 <h2>Menu</h2>
                 <ul>
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Competitions</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Companies</a></li>
@@ -30,8 +30,6 @@
                 <div id="open-right"><a href="#">&#9776;</a></div>
                 <div class="login">
                     <a href="#">Login</a>
-                    <span> / </span>
-                    <a href="site/profile.html">Register</a>
                     <div class="loginform">
                         <form action="#">
                             <input type="text" name="username" placeholder="username">
@@ -49,36 +47,54 @@
             </div>
         </div>
         <div data-role="content" class="snap-content">
-        <header>
-            <div class="container">
-                <h1>prinf('Hello world!');</h1>
+        <section class="block block-register">
+        <div class="container">
+            <div class="form-radio">
+                <div>
+                    <input type="radio" name="ident" value="id0" id="id0" checked>
+                    <label for="id0">Student</label>
+                </div>
+                <div>
+                    <input type="radio" name="ident" value="id1" id="id1">
+                    <label for="id1">Company</label>
+                </div>
             </div>
-        </header>
-        <section class="block block-1">
-            <div class="container">
-                <h2>Service for students who wants to improve their skills and get a job</h2>
-                <ul>
-                    <li class="item-1">
-                        <img src="image/icon-3.png" alt="student">
-                        <h3>Register</h3>
-                    </li>
-                    <li class="item-2">
-                        <img src="image/icon-1.png" alt="learning">
-                        <h3>Competition</h3>
-                    </li>
-                    <li class="item-3">
-                        <img src="image/icon-2.png" alt="worker">
-                        <h3>Work</h3>
-                    </li>
-                </ul>
+            <div class="block-form-1">
+                <form action="#">
+                    <div>Email<input type="email" name="login" placeholder="Email" required></div>
+                    <div>Password<input type="text" password="password" placeholder="Password" required></div>
+                    <div>Fisrt Name<input type="text" name="firstName" placeholder="Fisrt Name" required></div>
+                    <div>Last Name<input type="text" name="lastName" placeholder="Last Name" required></div>
+                    <div>Contry<input type="text" name="country" placeholder="Contry" required></div>
+                    <div>City<input type="text" name="city" placeholder="City" required></div>
+                    <div>University<input type="text" name="university" placeholder="University" required></div>
+                    <div>Start of the education<input type="number" name="start_study" placeholder="Start of the education" required></div>
+                    <div>End of the education<input type="number" name="end_study" placeholder="End of the education" required></div>
+                    <div>Age<input type="number" name="age" placeholder="Age" required></div>
+                    <div>Work<input type="text" name="work" placeholder="Work" required></div>
+                    <div class="addLanguage">
+                        <input type="submit" value="add language" id="addLanguage">
+                        <div>
+                            <select>
+                                <option>C++</option>
+                                <option value="">C#</option>
+                                <option value="">Python</option>
+                                <option value="">Java Script</option>
+                                <option value="">Java</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div><textarea></textarea>More information</div>
+                    <div class="button-form"><input type="submit" value="send"></div>
+                </form>
             </div>
-        </section>
-        <section class="block block-2">
-            <div class="container">
-                <img src="image/about.png" alt="about">
-                <h2>More details</h2>
-                <p>Participate in weekly online-competitions, increase your skills and rating.<br>Then, thanks to rating, companies choose the best students, and send them invitations to company online-event. <br>After that event you'll get a chance to get on the internship program in one of the best companies in the country.</p>
+            <div class="block-form-2">
+                <form action=""><!-- 
+                    <input type="text" text="">
+                    <input type="text" text=""> -->
+                </form>
             </div>
+        </div>
         </section>
         <footer>
             <div class="container">
@@ -88,6 +104,6 @@
         </div>
     </div>
 </body>
-    <script type="text/javascript" src="script/snap.js"></script>
-    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="../script/snap.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
 </html>

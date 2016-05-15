@@ -37,7 +37,7 @@ p {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background: #e5e5e5;
+	background: #fff;
 }
 
 .container {
@@ -347,6 +347,7 @@ section {
 
 .block-2 {
 	padding: 100px 0;
+	background: #e5e5e5;
 }
 
 .block-2 h2 {
@@ -364,6 +365,117 @@ section {
 	padding-right: 60px;
 	float: left;
 }
+
+/* register */
+
+.form-radio {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.form-radio div {
+	display: inline;
+	margin-right: 40px;
+	width: 300px;
+	font: 18px OpenSans-Light;
+}
+
+.form-radio div label {
+	cursor: pointer;
+}
+
+.block-register .container {
+	background: #fff;
+}
+
+.block-form-1 form {
+	margin: 0 auto;
+	width: 500px; 
+}
+
+.block-form-1 form div {
+	margin-top: 20px;
+	width: 500px;
+	font: 18px OpenSans-Light;
+	line-height: 32px;
+}
+
+.block-form-1 form div div {
+	margin-top: 0;
+	max-width: 320px;
+	float: left;
+}
+
+.block-form-1 input,
+.block-form-1 select,
+.block-form-1 textarea {
+	width: 260px;
+	height: 28px;
+	float: right;
+	padding: 0 20px;
+	border: 2px solid #ddd; 
+	font-size: 16px;
+	color: #848e92;
+	cursor: pointer;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	background: #fbfbfb;
+	transition: all .55s ease;
+}
+
+.block-form-1 select {
+	border-radius: 0;
+}
+
+.block-form-1 input:hover,
+.block-form-1 input:focus,
+.block-form-1 select:hover,
+.block-form-1 select:focus,
+.block-form-1 textarea:hover,
+.block-form-1 textarea:focus {
+	outline: none;
+	cursor: text;
+	color: #222;
+	transition: all .55s ease;
+}
+
+.block-form-1 input[type=submit]:hover,
+.block-form-1 select:hover,
+.block-form-1 #addLanguage:hover {
+	cursor: pointer;
+}
+
+.block-form-1 select {
+	display: block;
+	margin: 0 -14px 10px 16px;
+	width: 150px;
+	float: left;
+}
+
+#addLanguage {
+	float: left;
+	width: 180px;
+}
+
+.block-form-1 textarea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	resize: none;
+}
+
+.block-form-1 form div.button-form input {
+	float: none;
+	display: block;
+    margin : 0 auto;
+}
+
 
 
 /* footer */

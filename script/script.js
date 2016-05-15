@@ -36,6 +36,18 @@ function onWheel(e) {
 
 
 // login form
-$('.login').click(function() {
+$('.login a').click(function() {
 	($('.loginform').hasClass('active')) ? $('.loginform').removeClass('active') : $('.loginform').addClass('active animated fadeInDown');
 })
+
+$('#addLanguage').click(function() {
+	$('select').last().after(function() {
+	  return '<select><option>C++</option><option value="">C#</option><option value="">Python</option><option value="">Java Script</option><option value="">Java</option></select>';
+	 });
+})
+
+$('.form-radio label').click(function() {
+	var radio = $('input[name=ident]:checked').val();
+	if (radio === "id0")
+		
+});
