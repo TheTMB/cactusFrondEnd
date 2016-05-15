@@ -148,8 +148,8 @@ header {
 }
 
 .login a {
-	opacity: .75;
-	color: #0D47A1;
+	opacity: .9;
+	color: #fff;
 	font-family: OpenSans-Bold;
 	text-decoration: none;
 	transition: all .55s ease;
@@ -218,7 +218,8 @@ header {
 	margin-left: 20px;
     cursor: pointer;
     color: #fff;
-    background: #888;
+    background: #ff8e61;
+    opacity: .75;
 	transition: all .55s ease;
 }
 
@@ -228,7 +229,8 @@ header {
 }
 
 .loginform input[type=submit]:hover {
-    background: #aaa;
+	opacity: 1;
+    background: #ff8e61;
 	transition: all .55s ease;
 }
  
@@ -246,6 +248,10 @@ header {
 	font-family: OpenSans-Bold;
 	font-weight: 800;
 	float: right;
+}
+
+#open-right a {
+	color: #fff;
 }
 
 header h1 {
@@ -271,7 +277,6 @@ menu h2 {
 
 menu li {
 	padding: 20px;
-	margin-bottom: 5px;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -287,8 +292,12 @@ menu a:hover {
 	transition: all .55s ease;
 }
 
+menu li.active {
+	background: #ff8e61;
+}
+
 menu li.active a {
-	color: #e5e5e5;
+	color: #fff;
 	cursor: default;
 	font-weight: 800;
 }
@@ -298,7 +307,7 @@ menu li.active a {
 section {
 	position: relative;
 	padding: 100px 0;
-	min-height: 300px;
+	min-height: 417px;
 	width: 100%;
 }
 
@@ -403,12 +412,14 @@ section {
 	display: block;
 }
 
-.block-form form {
+.block-form form,
+.container-event form {
 	margin: 0 auto;
 	width: 500px; 
 }
 
-.block-form form div {
+.block-form form div,
+.container-event form div {
 	margin-top: 20px;
 	width: 500px;
 	font: 18px OpenSans-Light;
@@ -422,8 +433,12 @@ section {
 }
 
 .block-form input,
+.container-event input,
 .block-form select,
-.block-form textarea {
+.container-event select,
+.block-form textarea,
+.container-event textarea,
+#addLanguage {
 	width: 260px;
 	height: 28px;
 	float: right;
@@ -439,14 +454,33 @@ section {
 	transition: all .55s ease;
 }
 
+.container-event form div.language {
+	line-height: 20px;
+}
+
+.container-event form h2 {
+	margin: 20px 0 10px;
+}
+
+.container-event input[type=file] {
+	margin-right: 42px;
+	background: none;
+	padding: 0;
+	border: 0;
+}
+
 .block-form select {
 	border-radius: 0;
 }
 
 .block-form input:hover,
+.container-event input:hover,
 .block-form input:focus,
+.container-event input:focus,
 .block-form select:hover,
+.container-event select:hover,
 .block-form select:focus,
+.container-event select:focus,
 .block-form textarea:hover,
 .block-form textarea:focus {
 	outline: none;
@@ -455,10 +489,20 @@ section {
 	transition: all .55s ease;
 }
 
+.block-form input[type=submit] {
+	opacity: .7;
+	background: #ff8e61;
+	color: #fff;
+}
+
+.block-form input[type=submit]:hover {
+	opacity: 1;
+}
+
 .block-form input[type=submit]:hover,
-.block-form select:hover,
-.block-form-1 #addLanguage:hover {
+.block-form select:hover {
 	cursor: pointer;
+	color: #fff;
 }
 
 .block-form select {
@@ -470,7 +514,15 @@ section {
 
 #addLanguage {
 	float: left;
-	width: 180px;
+	text-align: center;
+	opacity: .75;
+	width: 136px;
+	transition: all .55s ease;
+}
+
+.block-form-1 #addLanguage:hover {
+	opacity: 1;
+	transition: all .55s ease;
 }
 
 .block-form textarea {
@@ -568,29 +620,72 @@ th:nth-child(1), td:nth-child(1) {
 	width: 80px;
 }
 
+.container-event th,
+.container-event td {
+	vertical-align: middle;
+}
+
+.container-event th:nth-child(1) input,
+.container-event td:nth-child(1) input {
+	text-align: center;
+	float: none;
+	width: 20px;
+	height: 20px;
+}
+
 tr:nth-child(even) {
 	background-color: #f2f2f2
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #ff8e61;
     color: white;
 }
 
 
+/* student */
 
+.block-student .company_photo {
+	background: url(../image/icon-3.png) no-repeat;
+	background-size: 100% 100%;
+}
 
+.block-student .block-profile-left div {
+	font: 14px OpenSans-Bold;
+}
 
+.block-student .block-profile-left div h2,
+.block-student .block-profile-left div h3,
+.block-student .block-profile-left div h4 {
+	display: inline;
+}
 
+/* competition */
 
+.container-comp {
+	margin: 0 auto;
+	width: 500px;
+}
 
+.comp-img {
+	margin-left: -20px;
+	width: 540px;
+	height: 300px;
+	background: url(../image/champ.jpg) no-repeat;
+	background-size: 100% 100%;
+}
 
+.container-comp td {
+	width: 420px;
+}
 
+.container-comp td:nth-child(1) {
+	width: 80px;
+}
 
-
-
-
-
+.container-comp .addEvent {
+	display: inline-block;
+}
 
 
 
@@ -600,6 +695,8 @@ th {
 /* footer */
 
 footer {
+	position: relative;
+	bottom: 0;
 	width: 100%;
 	height: 60px;
 	text-align: center;

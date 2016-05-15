@@ -46,32 +46,30 @@
                 </div>
             </div>
         </div>
-        <div data-role="content" class="snap-content block-event">
-            <div class="container container-event">
-                <section class="block">
-                    <form>
-                        <div>Name<input type="text" name="name" placeholder="Name"></div>
-                        <div>Start<input type="text" name="start" placeholder="Start"></div>
-                        <div>End<input type="text" name="end" placeholder="End"></div>
-                        <div>File<input type="file" name="file"></div>
-                        <h2>Add participants</h2>
-                        <div>City<input type="text" name="city" placeholder="City" required></div>
-                        <div>Start of the education<input type="number" name="start_study" placeholder="Start of the education" required></div>
-                        <div>End of the education<input type="number" name="end_study" placeholder="End of the education" required></div>
-                        <div class="language">Language
-                            <select>
-                                <option>C++</option>
-                                <option value="">C#</option>
-                                <option value="">Python</option>
-                                <option value="">Java Script</option>
-                                <option value="">Java</option>
-                            </select>
-                        </div>
-                        <div><a href="#" class="addEvent">Filter</a></div>
-                        <h2>List students</h2>
-                        <table id="filterStudents"></table>
-                        <div><a href="#" class="addEvent">Add students</a></div>
-                    </form>
+        <div data-role="content" class="snap-content block-profile block-student">
+            <div class="container container-profile"> 
+                <section class="block block-profile-left">
+                    <div class="company_photo"></div>
+                    <div>Name: <h2 class="company_profile">dsfsdf</h2></div>
+                    <div>Email: <h3 class="company_email">cvesty@mail.ru</h3></div>
+                    <div>University: <h4 class="company_email">NTUU KPI</h4></div>
+                    <div>Start of the education: <h4 class="company_email">2014</h4></div>
+                    <div>End of the education: <h4 class="company_email">2018</h4></div>
+                    <div>Language: <h4 class="company_email">c++</h4></div>
+                    <div>Age: <h4 class="company_email">20</h4></div>
+                    <div>Rating: <h4 class="company_rating">124</h4></div>
+                    <div>Country: <h4 class="company_country">ukr</h4></div>
+                    <div>City: <h4 class="company_city">kiev</h4></div>
+                </section>
+                <section class="block block-profile-right">
+                    <div class="events">    
+                        <h2>Next events:</h2>
+                        <table id="events"></table>
+                    </div> 
+                    <div class="eventsEnd">    
+                        <h2>Last events:</h2>
+                        <table id="eventsEnd"></table>
+                    </div> 
                 </section>
             </div>
             <footer>

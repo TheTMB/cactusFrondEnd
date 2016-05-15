@@ -16,7 +16,7 @@
                 <h2>Menu</h2>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="competition.html">Competitions</a></li>
+                    <li class="active"><a href="#">Competitions</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="#">Companies</a></li>
                 </ul>
@@ -46,32 +46,17 @@
                 </div>
             </div>
         </div>
-        <div data-role="content" class="snap-content block-event">
-            <div class="container container-event">
+        <div data-role="content" class="snap-content block-comp">
+            <div class="container container-comp" style="margin: 0 auto; width:"> 
                 <section class="block">
-                    <form>
-                        <div>Name<input type="text" name="name" placeholder="Name"></div>
-                        <div>Start<input type="text" name="start" placeholder="Start"></div>
-                        <div>End<input type="text" name="end" placeholder="End"></div>
-                        <div>File<input type="file" name="file"></div>
-                        <h2>Add participants</h2>
-                        <div>City<input type="text" name="city" placeholder="City" required></div>
-                        <div>Start of the education<input type="number" name="start_study" placeholder="Start of the education" required></div>
-                        <div>End of the education<input type="number" name="end_study" placeholder="End of the education" required></div>
-                        <div class="language">Language
-                            <select>
-                                <option>C++</option>
-                                <option value="">C#</option>
-                                <option value="">Python</option>
-                                <option value="">Java Script</option>
-                                <option value="">Java</option>
-                            </select>
-                        </div>
-                        <div><a href="#" class="addEvent">Filter</a></div>
-                        <h2>List students</h2>
-                        <table id="filterStudents"></table>
-                        <div><a href="#" class="addEvent">Add students</a></div>
-                    </form>
+                    <div class="events">    
+                        <h2>Next competitions:</h2>
+                        <table id="events"></table>
+                    </div> 
+                    <div class="eventsEnd">    
+                        <h2>Last competitions:</h2>
+                        <table id="eventsEnd"></table>
+                    </div> 
                 </section>
             </div>
             <footer>
