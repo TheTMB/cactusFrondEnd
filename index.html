@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="script/jquery-2.2.3.min.js"></script>
+    <script src="script/api.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/snap.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="shortcut icon" href="image/shortcut.png">
+	<title>Studevs</title>
+</head>
+<body>
+	<div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-right">
+        	<menu>
+        		<h2>Menu</h2>
+        		<ul>
+        			<li class="active"><a href="#">Home</a></li>
+        			<li><a href="site/competition.html">Competitions</a></li>
+        			<li><a href="site/events.html">Events</a></li>
+        			<li><a href="#">Companies</a></li>
+        		</ul>
+        	</menu>
+        </div>
+    </div>
+    <div data-role="page" class="container-snap" id="content" style="">
+		<div class="top-bar" data-position="fixed">
+        	<div class="container">
+				<div class="logo"></div>
+				<div id="open-right"><a href="#">&#9776;</a></div>
+				<div class="login">
+					<a href="#">logIn</a>
+					<span> / </span>
+					<a href="site/profile.html">Register</a>
+					<div class="loginform">
+						<form action="#" onsubmit="logIn(this)">
+					        <input type="text" name="username" placeholder="username" required>
+					        <input type="password" name="password" placeholder="password" required>
+					        <input type="submit" value="log in">
+					    </form>
+					</div>
+				</div>
+				<div class="search">
+                    <form action="#">
+                        <span class="icon-search"></span>
+                        <input type="text" name="text" id="search" placeholder="Find...">
+                    </form>
+                </div>
+			</div>
+		</div>
+		<div data-role="content" class="snap-content">
+        <header>
+        	<div class="container">
+    			<h1>prinf('Hello world!');</h1>
+        	</div>
+        </header>
+        <section class="block block-1">
+        	<div class="container">
+        		<h2>Service for students who wants to improve their skills and get a job</h2>
+        		<ul>
+        			<li class="item-1">
+        				<img src="image/icon-3.png" alt="student">
+        				<h3>Register</h3>
+        			</li>
+        			<li class="item-2">
+        				<img src="image/icon-1.png" alt="learning">
+        				<h3>Competition</h3>
+        			</li>
+        			<li class="item-3">
+        				<img src="image/icon-2.png" alt="worker">
+        				<h3>Work</h3>
+        			</li>
+        		</ul>
+        	</div>
+        </section>
+        <section class="block block-2">
+        	<div class="container">
+        		<img src="image/about.png" alt="about">
+        		<h2>More details</h2>
+        		<p>Participate in weekly online-competitions, increase your skills and rating.<br>Then, thanks to rating, companies choose the best students, and send them invitations to company online-event. <br>After that event you'll get a chance to get on the internship program in one of the best companies in the country.</p>
+        	</div>
+        </section>
+        <footer>
+        	<div class="container">
+        		<p>Copyright © 2016 Studev</p>
+        	</div>
+        </footer>
+		</div>
+    </div>
+</body>
+	<script type="text/javascript" src="script/snap.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</html>

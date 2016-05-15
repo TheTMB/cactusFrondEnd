@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/snap.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="shortcut icon" href="../image/shortcut.png">
+    <title>Studevs | Profile</title>
+</head>
+<body>
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-right">
+            <menu>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="competition.html">Competitions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#">Companies</a></li>
+                </ul>
+            </menu>
+        </div>
+    </div>
+    <div data-role="page" class="container-snap" id="content" style="">
+        <div class="top-bar" data-position="fixed">
+            <div class="container">
+                <div class="logo"></div>
+                <div id="open-right"><a href="#">&#9776;</a></div>
+                <div class="login">
+                    <a href="#">logIn</a>
+                    <span> / </span>
+                    <a href="profile.html">Register</a>
+                    <div class="loginform">
+                        <form action="#">
+                            <input type="text" name="username" placeholder="username">
+                            <input type="password" name="password" placeholder="password">
+                            <input type="submit" value="log in">
+                        </form>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="#">
+                        <span class="icon-search"></span>
+                        <input type="text" name="text" id="search" placeholder="Find...">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="snap-content block-profile block-student">
+            <div class="container container-profile"> 
+                <section class="block block-profile-left">
+                    <div class="company_photo"></div>
+                    <div>Name: <h2 class="company_profile">dsfsdf</h2></div>
+                    <div>Email: <h3 class="company_email">cvesty@mail.ru</h3></div>
+                    <div>University: <h4 class="company_email">NTUU KPI</h4></div>
+                    <div>Start of the education: <h4 class="company_email">2014</h4></div>
+                    <div>End of the education: <h4 class="company_email">2018</h4></div>
+                    <div>Language: <h4 class="company_email">c++</h4></div>
+                    <div>Age: <h4 class="company_email">20</h4></div>
+                    <div>Rating: <h4 class="company_rating">124</h4></div>
+                    <div>Country: <h4 class="company_country">ukr</h4></div>
+                    <div>City: <h4 class="company_city">kiev</h4></div>
+                </section>
+                <section class="block block-profile-right">
+                    <div class="events">    
+                        <h2>Events:</h2>
+                        <table id="events"></table>
+                    </div> 
+                    <div class="eventsEnd">    
+                        <h2>Competitions:</h2>
+                        <table id="eventsEnd"></table>
+                    </div> 
+                </section>
+            </div>
+            <footer>
+                <div class="container">
+                    <p>Copyright © 2016 Studevs</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="../script/snap.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+</html>

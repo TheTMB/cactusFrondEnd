@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../script/jquery-2.2.3.min.js"></script>
+    <script src="../script/api.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/snap.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="shortcut icon" href="../image/shortcut.png">
+    <title>Studevs | Register</title>
+</head>
+<body>
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-right">
+            <menu>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="competition.html">Competitions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#">Companies</a></li>
+                </ul>
+            </menu>
+        </div>
+    </div>
+    <div data-role="page" class="container-snap" id="content" style="">
+        <div class="top-bar" data-position="fixed">
+            <div class="container">
+                <div class="logo"></div>
+                <div id="open-right"><a href="#">&#9776;</a></div>
+                <div class="login">
+                    <a href="#">logIn</a>
+                    <span> / </span>
+                    <a href="profile.html">Register</a>
+                    <div class="loginform">
+                        <form action="#">
+                            <input type="text" name="username" placeholder="username">
+                            <input type="password" name="password" placeholder="password">
+                            <input type="submit" value="log in">
+                        </form>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="#">
+                        <span class="icon-search"></span>
+                        <input type="text" name="text" id="search" placeholder="Find...">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" class="snap-content">
+        <section class="block block-register">
+        <div class="container">
+            <div class="form-radio">
+                <div>
+                    <input type="radio" name="ident" value="id0" id="id0" checked>
+                    <label for="id0">Student</label>
+                </div>
+                <div>
+                    <input type="radio" name="ident" value="id1" id="id1">
+                    <label for="id1">Company</label>
+                </div>
+            </div>
+            <div class="block-form block-form-1 active">
+                <form action="#" onsubmit="registerStudent(this)">
+                    <div>Email<input type="email" name="login" placeholder="Email" required></div>
+                    <div>Password<input type="password" password="password" placeholder="Password" required></div>
+                    <div>Fisrt Name<input type="text" name="firstName" placeholder="Fisrt Name" required></div>
+                    <div>Last Name<input type="text" name="lastName" placeholder="Last Name" required></div>
+                    <div>Country<input type="text" name="country" placeholder="Country" required></div>
+                    <div>City<input type="text" name="city" placeholder="City" required></div>
+                    <div>University<input type="text" name="university" placeholder="University" required></div>
+                    <div>Start of the education<input type="number" name="start_study" placeholder="Start of the education" required></div>
+                    <div>End of the education<input type="number" name="end_study" placeholder="End of the education" required></div>
+                    <div>Age<input type="number" name="age" placeholder="Age" required></div>
+                    <div>Work<input type="text" name="work" placeholder="Work" required></div>
+                    <div class="addLanguage">
+                        <a href="#" id="addLanguage">add language</a>
+                        <div>
+                            <select>
+                                <option>C++</option>
+                                <option value="">C#</option>
+                                <option value="">Python</option>
+                                <option value="">Java Script</option>
+                                <option value="">Java</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div><textarea></textarea>More information</div>
+                    <div class="button-form"><input type="submit" value="send"></div>
+                </form>
+            </div>
+            <div class="block-form block-form-2">
+                <form action="#" onsubmit="registerStudent(this)">
+                    <div>Email<input type="email" name="login" placeholder="Email" required></div>
+                    <div>Password<input type="text" password="password" placeholder="Password" required></div>
+                    <div>Fisrt Name<input type="text" name="firstName" placeholder="Fisrt Name" required></div>
+                    <div>Last Name<input type="text" name="lastName" placeholder="Last Name" required></div>
+                    <div>Country<input type="text" name="country" placeholder="Country" required></div>
+                    <div>City<input type="text" name="city" placeholder="City" required></div>
+                    <div>Phone<input type="number" name="phone" placeholder="Phone" required></div>
+                    <div>Web-site<input type="text" name="site_domain_address" placeholder="Web-site" required></div>
+                    <div><textarea></textarea>Description</div>
+                    <div class="button-form"><input type="submit" value="send"></div>
+                </form>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>Copyright © 2016 Studevs</p>
+            </div>
+        </footer>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="../script/snap.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
+</html>
