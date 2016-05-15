@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="../script/jquery-2.2.3.min.js"></script>
+    <script src="../script/api.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/snap.css">
     <link rel="stylesheet" type="text/css" href="../css/animation.css">
@@ -29,7 +30,9 @@
                 <div class="logo"></div>
                 <div id="open-right"><a href="#">&#9776;</a></div>
                 <div class="login">
-                    <a href="#">Login</a>
+                    <a href="#">logIn</a>
+                    <span> / </span>
+                    <a href="profile.html">Register</a>
                     <div class="loginform">
                         <form action="#">
                             <input type="text" name="username" placeholder="username">
@@ -60,7 +63,7 @@
                 </div>
             </div>
             <div class="block-form block-form-1 active">
-                <form action="#" onsubmit="pushRegister(this)">
+                <form action="#" onsubmit="registerStudent(this)">
                     <div>Email<input type="email" name="login" placeholder="Email" required></div>
                     <div>Password<input type="password" password="password" placeholder="Password" required></div>
                     <div>Fisrt Name<input type="text" name="firstName" placeholder="Fisrt Name" required></div>
@@ -89,7 +92,7 @@
                 </form>
             </div>
             <div class="block-form block-form-2">
-                <form action="#">
+                <form action="#" onsubmit="registerStudent(this)">
                     <div>Email<input type="email" name="login" placeholder="Email" required></div>
                     <div>Password<input type="text" password="password" placeholder="Password" required></div>
                     <div>Fisrt Name<input type="text" name="firstName" placeholder="Fisrt Name" required></div>

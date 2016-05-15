@@ -29,7 +29,9 @@
                 <div class="logo"></div>
                 <div id="open-right"><a href="#">&#9776;</a></div>
                 <div class="login">
-                    <a href="#">Login</a>
+                    <a href="#">logIn</a>
+                    <span> / </span>
+                    <a href="profile.html">Register</a>
                     <div class="loginform">
                         <form action="#">
                             <input type="text" name="username" placeholder="username">
@@ -49,7 +51,7 @@
         <div data-role="content" class="snap-content block-event">
             <div class="container container-event">
                 <section class="block">
-                    <form>
+                    <form action="#" onsubmit="addEvent(this)">
                         <div>Name<input type="text" name="name" placeholder="Name"></div>
                         <div>Start<input type="text" name="start" placeholder="Start"></div>
                         <div>End<input type="text" name="end" placeholder="End"></div>

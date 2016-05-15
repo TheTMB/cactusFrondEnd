@@ -29,7 +29,9 @@
                 <div class="logo"></div>
                 <div id="open-right"><a href="#">&#9776;</a></div>
                 <div class="login">
-                    <a href="#">Login</a>
+                    <a href="#">logIn</a>
+                    <span> / </span>
+                    <a href="profile.html">Register</a>
                     <div class="loginform">
                         <form action="#">
                             <input type="text" name="username" placeholder="username">
@@ -47,14 +49,15 @@
             </div>
         </div>
         <div data-role="content" class="snap-content block-comp">
-            <div class="container container-comp"> 
+            <div class="container container-comp" style="margin: 0 auto; width:"> 
                 <section class="block">
-                    <h1 style="margin: 0px 0 10px;text-align:center;color: #000; font-weight: 800; color:#ff8e61">Competition #32</h1>
-                    <div class="comp-img"></div>
                     <div class="events">    
-                        <h2>Tasks:</h2>
-                        <table id="tasks"></table>
-                        <a href="#" class="addEvent">Start competition</a>
+                        <h2>Next events:</h2>
+                        <table id="events"></table>
+                    </div> 
+                    <div class="eventsEnd">    
+                        <h2>Last events:</h2>
+                        <table id="eventsEnd"></table>
                     </div> 
                 </section>
             </div>
